@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb5358a247.js" crossorigin="anonymous"></script>
+</head>
+<body onpageshow="scrollToTop()">
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul class="text-animation" id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="text-animation">Web Developer</p>
+                <h1 class="text-animation">Hi, I'm <span>Vikash</span><br>From Bangalore, India</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------About--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                <div class="align">
+                    <p>Hi, I'm Vikas Chaudhary, a web developer with a passion for creating beautiful and functional websites. I'm always looking for new challenges and opportunities to learn and grow. I'm confident that I can use my skills and experience to help you create a website that meets your needs. I'm always available to answer your questions and provide you with the best possible service.</p>
+                </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>UI/UX Design</span><br>Web/App Interfaces</li>
+                            <li><span>PCB Design</span><br>Electronics Manufacturing Services</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Java Training at Ethnus</li>
+                            <li><span>Feb. 2021 - May. 2021</span><br>Machine Learning With AI Using Python at Microsoft</li>
+                            <li><span>Aug. 2021 - Sep. 2021</span><br>PCB Design | Electronics Manufacturing Services<br>Mytonics Pvt Ltd, Mysore</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>Bachelor of Engineering - ECE<br>Yenepoya Institute Of Technology Mangalore</li>
+                            <li><span>2017 - 2019</span><br>PUC<br>Science (PCMC) <br>Jain Pre-University Moodbidri</li>
+                            <li><span>2017</span><br>10th<br>MK Shetty Central School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Delivering bespoke web design services that blend creativity with functionality for impactful digital presences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Transforming complex ideas into delightful and user-friendly interfaces with our expert UI/UX design services.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-microchip"></i>
+                    <h2>PCB Design</h2>
+                    <p>Driving technological progress with expertly engineered PCB designs, delivering reliability and precision for mission-critical applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------Portfolio--------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Lane Following Robot</h3>
+                        <p>Experience an innovative lane-following robot project, demonstrating advanced autonomous capabilities and exceptional precision in navigation.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Traffic Sign Recognition Robot</h3>
+                        <p>Unveil a traffic sign recognition robot project, leveraging advanced computer vision for seamless interaction with traffic signs.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Mosquito Killing System Using UV Light</h3>
+                        <p>Explore my innovative mosquito killing system utilizing UV light technology, contributing to eco-friendly and effective pest control solutions.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!------------------Contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vikaschaudhary@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9741528026</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span><div id="msg"></div></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vikash Chaudary 2023</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var Sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            Sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            Sidemenu.style.right = "-200px";
+        }
+
+    </script> 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz8R44UVRBp7QyhW3MFqfOi93ZA0Y3paDFT3FXasPvVixS1mvOMHfN2w09cbbo3vtlcVg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(Response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        function scrollToTop() {
+        window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
